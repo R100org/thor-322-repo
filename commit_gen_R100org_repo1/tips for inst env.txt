@@ -1,0 +1,9 @@
+sudo ssh -i ./Downloads/instenv-generated-key-1786-7krg.pem ubuntu@10.108.14.140
+
+cd /var/atlassian/application-data/jira
+
+sudo chmod -R 777 ./log
+
+cd ./log
+
+tail -f ./atlassian-jira.log
